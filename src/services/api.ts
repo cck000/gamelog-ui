@@ -1,8 +1,11 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 
+
+const baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+
 const api = axios.create({
-  baseURL: 'http://localhost:8080/api', // Endereço do seu Spring Boot
+  baseURL: baseURL, // Endereço do seu Spring Boot
 });
 
 // INTERCEPTOR DE REQUISIÇÃO
