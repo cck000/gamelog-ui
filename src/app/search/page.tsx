@@ -1,12 +1,13 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { gameService, GameSearchResult } from '@/src/services/gameService';
 import { Loader2, Plus, Check, Search as SearchIcon, Calendar, Monitor } from 'lucide-react';
 import Image from 'next/image';
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
 
@@ -178,5 +179,15 @@ export default function SearchPage() {
         )}
       </div>
     </div>
+  );
+
+}
+
+export default function SearchPage() {
+  return (
+    
+    <Suspense fallback={<div>Carregando busca...</div>}>
+      <SearchContent />
+    </Suspense>
   );
 }
