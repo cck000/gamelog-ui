@@ -32,8 +32,8 @@ export default function RegisterPage() {
   return (
     <div className="w-full max-w-md bg-slate-900/50 border border-slate-800 p-8 rounded-2xl shadow-xl backdrop-blur-sm">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-white mb-2">Create Account</h1>
-        <p className="text-slate-400 text-sm">Join the ultimate game tracking community.</p>
+        <h1 className="text-3xl font-bold text-white mb-2">Crie sua conta</h1>
+        <p className="text-slate-400 text-sm">Junte-se à comunidade definitiva de rastreamento de jogos.</p>
       </div>
 
       <form onSubmit={handleRegister} className="space-y-4">
@@ -47,7 +47,7 @@ export default function RegisterPage() {
           <label className="text-xs font-medium text-slate-400 uppercase tracking-wider ml-1">Username</label>
           <input
             type="text"
-            placeholder="Choose a username"
+            placeholder="Escolha um nome de usuário"
             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition"
             value={formData.username}
             onChange={(e) => setFormData({ ...formData, username: e.target.value })}
@@ -59,7 +59,7 @@ export default function RegisterPage() {
           <label className="text-xs font-medium text-slate-400 uppercase tracking-wider ml-1">Email Address</label>
           <input
             type="email"
-            placeholder="Enter your email"
+            placeholder="Insira seu email"
             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -71,7 +71,7 @@ export default function RegisterPage() {
           <label className="text-xs font-medium text-slate-400 uppercase tracking-wider ml-1">Password</label>
           <input
             type="password"
-            placeholder="Create a password"
+            placeholder="Crie uma senha"
             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition"
             value={formData.password}
             onChange={(e) => setFormData({ ...formData, password: e.target.value })}
@@ -89,9 +89,9 @@ export default function RegisterPage() {
       </form>
       
       <p className="text-center text-slate-500 text-sm mt-6">
-        Already have an account?{' '}
+        Já tem uma conta?{' '}
         <Link href="/login" className="text-blue-500 hover:text-blue-400 font-medium">
-          Sign in
+          Faça login
         </Link>
       </p>
     </div>

@@ -32,8 +32,8 @@ export default function DashboardPage() {
             <p className="text-slate-400 text-sm mt-1">
                 {/* Mostra contagem filtrada vs total */}
                 {searchLocalQuery 
-                  ? `Found ${filteredGames.length} of ${games.length} games`
-                  : `${games.length} ${games.length === 1 ? 'game' : 'games'} in collection`
+                  ? `Encontrados ${filteredGames.length} de ${games.length} jogos`
+                  : `${games.length} ${games.length === 1 ? 'jogo' : 'jogos'} na coleção`
                 }
             </p>
         </div>
@@ -61,9 +61,9 @@ export default function DashboardPage() {
                    <div className="inline-flex bg-slate-800 p-4 rounded-full mb-4">
                         <Frown className="text-slate-500" size={32} />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-2">No games found</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Nenhum jogo encontrado</h3>
                     <p className="text-slate-400">
-                        We couldn&apos;t find any game matching `&quot;{searchLocalQuery}&quot;` in your library.
+                        Não conseguimos encontrar nenhum jogo correspondente a `&quot;{searchLocalQuery}&quot;` na sua biblioteca.
                     </p>
                 </>
             ) : (
@@ -72,9 +72,9 @@ export default function DashboardPage() {
                     <div className="inline-flex bg-slate-800 p-4 rounded-full mb-4">
                         <PlusCircle className="text-slate-500" size={32} />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-2">Your collection is empty</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Sua coleção está vazia</h3>
                     <p className="text-slate-400 max-w-sm mx-auto mb-6">
-                        Start building your library by adding new games via the button above.
+                        Comece a construir sua biblioteca adicionando novos jogos pelo botão acima.
                     </p>
                 </>
             )}

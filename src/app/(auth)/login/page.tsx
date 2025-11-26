@@ -38,8 +38,8 @@ export default function LoginPage() {
   return (
     <div className="w-full max-w-md bg-slate-900/50 border border-slate-800 p-8 rounded-2xl shadow-xl backdrop-blur-sm">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-white mb-2">Welcome Back, Gamer!</h1>
-        <p className="text-slate-400 text-sm">Login to manage your collection.</p>
+        <h1 className="text-3xl font-bold text-white mb-2">Bem vindo de volta, Gamer!</h1>
+        <p className="text-slate-400 text-sm">Faça login para gerenciar sua coleção.</p>
       </div>
 
       <form onSubmit={handleLogin} className="space-y-4">
@@ -53,7 +53,7 @@ export default function LoginPage() {
           <label className="text-xs font-medium text-slate-400 uppercase tracking-wider ml-1">Username</label>
           <input
             type="text"
-            placeholder="Enter your username"
+            placeholder="Insira seu nome de usuário"
             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition"
             value={formData.username}
             onChange={(e) => setFormData({ ...formData, username: e.target.value })}
@@ -68,7 +68,7 @@ export default function LoginPage() {
           </div>
           <input
             type="password"
-            placeholder="Enter your password"
+            placeholder="Insira sua senha"
             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition"
             value={formData.password}
             onChange={(e) => setFormData({ ...formData, password: e.target.value })}
@@ -86,9 +86,9 @@ export default function LoginPage() {
       </form>
       
       <p className="text-center text-slate-500 text-sm mt-6">
-        Don&apos;t have an account?{' '}
+        Não tem uma conta?{' '}
         <Link href="/register" className="text-blue-500 hover:text-blue-400 font-medium">
-          Sign up
+          Cadastre-se
         </Link>
       </p>
     </div>

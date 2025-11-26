@@ -66,11 +66,11 @@ function SearchContent() {
       
       {/* CARD DE BUSCA (Baseado na sua imagem) */}
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl mb-8">
-        <h1 className="text-2xl font-bold text-white mb-6">Add New Game</h1>
+        <h1 className="text-2xl font-bold text-white mb-6">Adicionar Novo Jogo</h1>
         
         <form onSubmit={handleSearch} className="space-y-6">
           <div className="space-y-2">
-            <label className="text-sm font-medium text-slate-400">Game Title</label>
+            <label className="text-sm font-medium text-slate-400">Título do Jogo</label>
             <div className="relative">
               <input
                 type="text"
@@ -87,7 +87,7 @@ function SearchContent() {
               </button>
             </div>
             <p className="text-xs text-slate-500">
-              Type the name of the game and we will fetch the details (Platform, Year, Cover) automatically.
+              Digite o nome do jogo e nós buscaremos os detalhes (Plataforma, Ano, Capa) automaticamente.
             </p>
           </div>
         </form>
@@ -146,7 +146,7 @@ function SearchContent() {
                 {game.inLibrary ? (
                   <button disabled className="flex items-center gap-2 bg-green-500/10 text-green-500 border border-green-500/20 px-4 py-2 rounded-lg text-sm font-medium cursor-default">
                     <Check size={16} />
-                    In Library
+                    Na Biblioteca
                   </button>
                 ) : (
                   <button 
@@ -157,12 +157,12 @@ function SearchContent() {
                     {addingId === game.externalApiId ? (
                       <>
                         <Loader2 size={16} className="animate-spin" />
-                        Adding...
+                        Adicionando...
                       </>
                     ) : (
                       <>
                         <Plus size={16} />
-                        Add to Library
+                        Adicionar à Biblioteca
                       </>
                     )}
                   </button>
@@ -174,7 +174,7 @@ function SearchContent() {
 
         {results.length === 0 && query && !loading && (
           <div className="text-center py-12 text-slate-500">
-            No games found matching &quot;{query}&quot;
+            Nenhum jogo encontrado para &quot;{query}&quot;
           </div>
         )}
       </div>

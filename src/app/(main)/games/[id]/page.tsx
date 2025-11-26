@@ -24,9 +24,9 @@ export default function GameDetailsPage() {
   if (!game) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center text-slate-500">
-         <p>Game not found or loading...</p>
+         <p>Jogos não encontrados ou carregando...</p>
          <button onClick={() => router.back()} className="mt-4 text-blue-500 hover:underline">
-            Go back
+            Voltar
          </button>
       </div>
     );
@@ -47,7 +47,7 @@ export default function GameDetailsPage() {
 
   // Ação: Remover Jogo
   const handleRemove = async () => {
-    if (!confirm("Are you sure you want to remove this game from your library?")) return;
+    if (!confirm("Tem certeza de que deseja remover este jogo da sua biblioteca?")) return;
 
     setIsDeleting(true);
     try {
@@ -69,7 +69,7 @@ export default function GameDetailsPage() {
         className="flex items-center gap-2 text-slate-400 hover:text-white transition mb-8 group"
       >
         <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-        Back to Library
+        Voltar para a Biblioteca
       </button>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -147,7 +147,7 @@ export default function GameDetailsPage() {
                         className="flex items-center justify-center gap-2 bg-red-500/10 hover:bg-red-500/20 text-red-500 border border-red-500/20 px-6 py-3 rounded-xl font-medium transition disabled:opacity-50 whitespace-nowrap"
                     >
                         {isDeleting ? <Loader2 className="animate-spin" size={18}/> : <Trash2 size={18} />}
-                        Remove
+                        Remover
                     </button>
                 </div>
             </div>
