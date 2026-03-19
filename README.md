@@ -12,7 +12,7 @@ Construído com Next.js (App Router), este projeto foca em uma experiência flui
 - **Design Responsivo:** Layout que se adapta perfeitamente a celulares, tablets e desktops.
 - **Proteção de Rotas:** Middleware inteligente que redireciona usuários não autenticados para a tela de login.
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Next.js 14+** (App Router)
 - **React 18**
