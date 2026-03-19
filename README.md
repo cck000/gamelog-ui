@@ -22,3 +22,12 @@ Construído com Next.js (App Router), este projeto foca em uma experiência flui
 - **Lucide React** (Ícones SVG leves)
 - **JS-Cookie** (Gerenciamento de sessão no lado do cliente)
 
+##  Telas da Aplicação
+### Tela de Login
+![Login](<img width="1339" height="900" alt="gamelog_login" src="https://github.com/user-attachments/assets/a90f47c1-abbf-4b02-a7b6-01af3cbe8bf3" />)
+### Dashboard (Minha Biblioteca)
+![Dashboard](<img width="1265" height="917" alt="gamelog_dash" src="https://github.com/user-attachments/assets/54862a75-6cc6-4546-8d9c-2344b1b6462e" />)
+### Busca na API (RAWG)
+![Busca](<img width="1386" height="906" alt="gamelog_busca" src="https://github.com/user-attachments/assets/2bcaa654-275a-45e3-8f04-09d6a4021600" />)
+### Detalhes e Gerenciamento do Jogo
+![Detalhes](<img width="1304" height="910" alt="gamelog_detalhes" src="https://github.com/user-attachments/assets/6174dd53-a057-434f-8930-ec5f72f53387" />)
