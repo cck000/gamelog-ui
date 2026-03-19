@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  GameLog UI (Frontend)
 
-## Getting Started
+> Interface de usuário moderna e responsiva para o **GameLog**, um aplicativo web para organizar sua coleção de jogos.
 
-First, run the development server:
+Construído com Next.js (App Router), este projeto foca em uma experiência fluida de *Single Page Application* (SPA), oferecendo um design escuro (Dark Mode) inspirado em plataformas modernas de jogos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##  Funcionalidades Visuais
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dashboard Dinâmico:** Visualize todos os seus jogos salvos em formato de "Pôster de Cinema" (aspect-ratio 16:9).
+- **Busca em Tempo Real (Local):** Filtre seus jogos rapidamente sem recarregar a página utilizando a Context API.
+- **Modal de Adição Inteligente:** Busque novos jogos através da integração com a RAWG API sem perder o contexto da sua biblioteca atual.
+- **Design Responsivo:** Layout que se adapta perfeitamente a celulares, tablets e desktops.
+- **Proteção de Rotas:** Middleware inteligente que redireciona usuários não autenticados para a tela de login.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 14+** (App Router)
+- **React 18**
+- **Tailwind CSS** (Estilização)
+- **TypeScript** (Tipagem estática)
+- **Axios** (Requisições HTTP com interceptadores)
+- **Lucide React** (Ícones SVG leves)
+- **JS-Cookie** (Gerenciamento de sessão no lado do cliente)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
